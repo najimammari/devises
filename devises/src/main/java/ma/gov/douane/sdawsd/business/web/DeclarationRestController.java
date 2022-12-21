@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ma.gov.douane.sdawsd.business.service.DeclarationService;
 
 @RestController
-public class DeclarationRestConroller {
+public class DeclarationRestController {
 
 	@Autowired
 	private DeclarationService declarationService;
