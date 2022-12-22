@@ -16,5 +16,5 @@ public interface PointFrontalierSecondaryDao extends JpaRepository<PointFrontali
 
 	@RestResource(path = "/pointFrontalierSecondaryValide")
 	@Query("select p from PointFrontalierSecondary p where p.dateFin > sysdate()")
-    public List<PointFrontalierSecondary> findAllWithDateFinAfter();
+    public List<PointFrontalierSecondary> findAllValide();
 }

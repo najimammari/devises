@@ -17,6 +17,6 @@ public class PaysSecondaryRestController {
 	
 	@GetMapping("/paysSecondaryValide")
 	public List<PaysSecondary> findAllPaysSecondary(){
-		return paysSecondaryDao.findAllWithDateFinAfter();
+		return paysSecondaryDao.findAllValide();
 	}
 }

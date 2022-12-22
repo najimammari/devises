@@ -17,6 +17,6 @@ public class PointFrontalierSecondaryRestController {
 	
 	@GetMapping("/pointFrontalierSecondaryValide")
 	public List<PointFrontalierSecondary> findAllPaysSecondary(){
-		return pointFrontalierSecondaryDao.findAllWithDateFinAfter();
+		return pointFrontalierSecondaryDao.findAllValide();
 	}
 }
