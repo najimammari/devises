@@ -3,7 +3,7 @@ package ma.gov.douane.sdawsd.business.service.impl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import ma.gov.douane.sdawsd.business.dao.DeclarationDao;
+import ma.gov.douane.sdawsd.business.dao.primary.DeclarationDao;
 import ma.gov.douane.sdawsd.business.service.DeclarationService;
 
 @Service

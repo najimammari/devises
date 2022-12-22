@@ -1,4 +1,4 @@
-package ma.gov.douane.sdawsd.model;
+package ma.gov.douane.sdawsd.model.primary;
 
 import java.io.Serializable;
 import java.util.Collection;

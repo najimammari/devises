@@ -1,16 +1,15 @@
-package ma.gov.douane.sdawsd.model;
+package ma.gov.douane.sdawsd.model.primary;
 
-public enum NatureTitre {
+public enum TypeJustificatif {
+
+	DECLARATION("Déclaration"), BORDEREAU("Bordereau de change");
 	
-	ACTIONS("ACTIONS"), OBLIGATIONS("OBLIGATIONS"), BON_DE_CAISSE(
-			"BON DE CAISSE"), AUTRES("AUTRES");
-
 	/**
 	 * Enumeration value
 	 */
 	private String enumValue;
 
-	private NatureTitre(String enumValue) {
+	private TypeJustificatif(String enumValue) {
 		this.enumValue = enumValue;
 	}
 
@@ -22,5 +21,4 @@ public enum NatureTitre {
 		this.enumValue = enumValue;
 	}
 		
-
 }
