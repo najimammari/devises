@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-@Table(name = "DEV_DEVISE",schema = "BADRP2")
+@Table(name = "DEV_DEVISE",schema = "DB_DEVISES")
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
 public class TypeDeviseSecondary implements Serializable{
 

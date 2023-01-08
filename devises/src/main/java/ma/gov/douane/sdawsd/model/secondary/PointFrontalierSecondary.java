@@ -12,7 +12,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 @Entity
-@Table(name = "POSTE_FRONTALIER_TB",schema = "BADRP2")
+@Table(name = "POSTE_FRONTALIER_TB",schema = "DB_DEVISES")
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
 public class PointFrontalierSecondary implements Serializable{
 

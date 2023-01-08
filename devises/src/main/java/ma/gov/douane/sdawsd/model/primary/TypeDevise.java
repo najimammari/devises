@@ -3,12 +3,7 @@ package ma.gov.douane.sdawsd.model.primary;
 import java.io.Serializable;
 import java.util.Collection;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,15 +23,8 @@ public class TypeDevise implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+	@Column(name = "code_devise")
 	private String codeDevise;
-	
+	@Column(name = "nom_devise")
 	private String nomDevise;
-	
-	@OneToMany(mappedBy = "typeDevise")
-	private Collection<LigneDevise> ligneDevises;
-	
-	@OneToMany(mappedBy = "typeDevise")
-	private Collection<TitrePorteur> titrePorteurs;
-	
 }

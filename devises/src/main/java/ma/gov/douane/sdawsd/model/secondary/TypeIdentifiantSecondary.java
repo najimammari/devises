@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-@Table(name = "TYPE_DOCUMENT_IDENTITE_TB",schema = "BADRP2")
+@Table(name = "TYPE_DOCUMENT_IDENTITE_TB",schema = "DB_DEVISES")
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
 public class TypeIdentifiantSecondary implements Serializable{
 

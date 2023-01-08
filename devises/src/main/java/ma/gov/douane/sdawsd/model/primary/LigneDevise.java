@@ -2,6 +2,7 @@ package ma.gov.douane.sdawsd.model.primary;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,10 +28,10 @@ public class LigneDevise implements Serializable{
 	private Long id;
 	
 	private double montant;
-	
+
 	@ManyToOne
 	private TypeDevise typeDevise;
-	
+	@JsonIgnore
 	@ManyToOne
 	private Declaration declaration;
 

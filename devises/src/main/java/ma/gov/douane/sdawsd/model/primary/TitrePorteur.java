@@ -2,6 +2,7 @@ package ma.gov.douane.sdawsd.model.primary;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -32,13 +33,12 @@ public class TitrePorteur implements Serializable{
 	private String referenceTitre;
 	
 	private String emetteur;
-	
-	@Enumerated(EnumType.STRING)
-	private NatureTitre natureTitre;
-	
+
+	private String natureTitre;
+
 	@ManyToOne
 	private TypeDevise typeDevise;
-	
+	@JsonIgnore
 	@ManyToOne
 	private Declaration declaration;
 }

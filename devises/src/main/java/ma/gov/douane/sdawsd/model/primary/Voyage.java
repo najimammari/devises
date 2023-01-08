@@ -38,7 +38,4 @@ public class Voyage implements Serializable{
 	
 	@OneToOne
 	private Pays paysProvenance;
-	
-	@OneToMany(mappedBy = "voyage")
-	private Collection<Declaration> declarations ;
 }

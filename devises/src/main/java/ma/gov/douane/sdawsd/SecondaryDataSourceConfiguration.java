@@ -45,7 +45,7 @@ public class SecondaryDataSourceConfiguration {
             EntityManagerFactoryBuilder secondaryEntityManagerFactoryBuilder, @Qualifier("secondaryDataSource") DataSource secondaryDataSource) {
 
         Map<String, String> secondaryJpaProperties = new HashMap<>();
-        secondaryJpaProperties.put("hibernate.dialect", "org.hibernate.dialect.Oracle10gDialect");
+        secondaryJpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         secondaryJpaProperties.put("hibernate.hbm2ddl.auto", "none");
 
         return secondaryEntityManagerFactoryBuilder

@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-@Table(name = "PAY_PAYS",schema = "BADRP2")
+@Table(name = "PAY_PAYS",schema = "DB_DEVISES")
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
 public class PaysSecondary implements Serializable{
 	/**
@@ -21,7 +21,7 @@ public class PaysSecondary implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	@Column(name = "pay_var_codepays")
+	@Column(name = "id")
 	private String codePays;
 	@Column(name = "pay_var_nompays")
 	private String nomPays;

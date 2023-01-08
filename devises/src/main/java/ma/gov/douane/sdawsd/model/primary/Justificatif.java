@@ -36,14 +36,16 @@ public class Justificatif implements Serializable{
 	
 	private String referenceBordereau;
 	
-	@Enumerated(EnumType.STRING)
-	private TypeJustificatif typeJustificatif;
-	
+
+	private String typeJustificatif;
+
+	private String fileName;
+	private String typeMime;
+	@Lob
+	@Column(length=100000)
+	private String contentBase64;
 	@Lob
 	@Column(length=100000)
 	private byte[] document;
-	
-	@OneToOne(mappedBy = "justificatif")
-	private Declaration declaration;
 	
 }

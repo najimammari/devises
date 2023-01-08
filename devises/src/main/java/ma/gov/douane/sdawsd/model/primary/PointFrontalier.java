@@ -2,11 +2,7 @@ package ma.gov.douane.sdawsd.model.primary;
 
 import java.io.Serializable;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,7 +24,7 @@ public class PointFrontalier implements Serializable{
 	private String code;
 	
 	private String libelle;
-	
+	@Column(name = "code_arrond")
 	private String codeArrond;
 
 }

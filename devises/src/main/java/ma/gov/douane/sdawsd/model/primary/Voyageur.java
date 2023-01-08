@@ -46,6 +46,4 @@ public class Voyageur implements Serializable{
 	
 	private boolean resident;
 
-	@OneToMany(mappedBy = "voyageur")
-	private Collection<Declaration> declarations ;
 }
