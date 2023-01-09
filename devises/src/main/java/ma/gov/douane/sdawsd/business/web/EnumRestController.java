@@ -16,13 +16,13 @@ import java.util.stream.Stream;
 
 @RestController
 public class EnumRestController {
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4200,http://172.19.144.1:8082")
 	@GetMapping("/natureTitres")
 	public List<String> findAllNatureTitres(){
 		return Stream.of(NatureTitre.values()).map(n -> n.getEnumValue()).collect(Collectors.toList());
 	}
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4200,http://172.19.144.1:8082")
 	@GetMapping("/typeJustificatif")
 	public List<String> findAllTypeJustificatif(){
 		return Stream.of(TypeJustificatif.values()).map(n -> n.getEnumValue()).collect(Collectors.toList());

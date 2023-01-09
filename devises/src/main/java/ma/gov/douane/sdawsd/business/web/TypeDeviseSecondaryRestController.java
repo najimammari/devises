@@ -19,7 +19,7 @@ public class TypeDeviseSecondaryRestController {
 	private TypeDeviseSecondaryDao typeDeviseSecondaryDao;
 	@Autowired
 	private TypeDeviseDao typeDeviseDao;
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4200,http://172.19.144.1:8082")
 	@GetMapping("/typeDeviseSecondaryValide")
 	public List<TypeDevise> findAllTypeDeviseSecondary(){
 		return typeDeviseDao.findAll();

@@ -19,7 +19,7 @@ public class PaysSecondaryRestController {
 	private PaysSecondaryDao paysSecondaryDao;
 	@Autowired
 	private PaysDao paysDao;
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4200,http://172.19.144.1:8082")
 	@GetMapping("/paysSecondaryValide")
 	public List<Pays> findAllPaysSecondary(){
 		return paysDao.findAll();

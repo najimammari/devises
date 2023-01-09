@@ -19,7 +19,7 @@ public class PointFrontalierSecondaryRestController {
 	private PointFrontalierSecondaryDao pointFrontalierSecondaryDao;
 	@Autowired
 	private PointFrontalierDao pointFrontalierDao;
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4200,http://172.19.144.1:8082")
 	@GetMapping("/pointFrontalierSecondaryValide")
 	public List<PointFrontalier> findAllPointFrontalierSecondary(){
 		return pointFrontalierDao.findAll();

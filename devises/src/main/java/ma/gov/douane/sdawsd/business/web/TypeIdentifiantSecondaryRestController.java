@@ -19,7 +19,7 @@ public class TypeIdentifiantSecondaryRestController {
 	private TypeIdentifiantSecondaryDao typeIdentifiantSecondaryDao;
 	@Autowired
 	private TypeIdentifiantDao typeIdentifiantDao;
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://localhost:4200,http://172.19.144.1:8082")
 	@GetMapping("/typeIdentifiantSecondaryValide")
 	public List<TypeIdentifiant> findAllTypeIdentifiantSecondary(){
 		return typeIdentifiantDao.findAll();
